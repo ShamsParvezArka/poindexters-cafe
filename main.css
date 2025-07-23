@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Alegreya";
+    src: url(fonts/alegreya.ttf);
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url(fonts/georgia.ttf);
+}
+
+@font-face {
+    font-family: "Georgia Italic";
+    src: url(fonts/georgiai.ttf);
+}
+
+body {
+    width: 480px;
+    margin: auto;
+    padding: 5px;
+    padding-top: 20px;
+    position: relative;
+    font-family: 'Georgia';
+    font-size: 20px;
+    background: #1D1D1D;
+    color: #EEE;
+    line-height: 22px;
+}
+
+.banner {
+    color: #ffb900;
+    font-family: "Alegreya";
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.sub-banner {
+    font-family: "Alegreya";
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+small {
+    padding-top: 40px;
+    position: relative;
+    font-family: Alegreya;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.custom-list {
+    position: relative;
+    left: -27px;
+}
+
+.custom-list li::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ffb900;
+    border-radius: 0%; 
+    margin-right: 0.5em;
+    vertical-align: middle;
+    transition: 0.2s ease;
+}
+
+.custom-list li {
+		list-style-type: none;
+    margin-bottom: 3px;
+}
+
+.custom-list li:hover::before {
+		border-radius: 50%;
+}
+
+.custom-list a {
+    color: #b9945a;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;    
+}
+
+.custom-list a:hover {
+    border-bottom-color: #b9945a;    
+}
+
+.date {
+    font-family: Alegreya;
+    font-size: 18px;
+    font-style: italic;
+    padding-right: 7px;
+}
+
+
